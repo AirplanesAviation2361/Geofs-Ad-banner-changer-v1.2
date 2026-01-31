@@ -77,3 +77,21 @@
         geofs.adbannerOn = !0;
     });
 })();
+// ===== GeoFS Ad Banner Changer =====
+
+const banners = [
+
+];
+
+let index = 0;
+
+function changeBanner() {
+  const banner = document.querySelector(".ad-banner");
+  if (!banner) return;
+
+  banner.innerText = banners[index];
+  index = (index + 1) % banners.length;
+}
+
+// wait for GeoFS to load the banner first
+setInterval(changeBanner, 5000);
