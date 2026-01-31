@@ -21,3 +21,13 @@ Effectiveness of Aerial Advertising
 High Visibility: Aerial banners can be seen by thousands of people in a short time, making them an effective way to create brand awareness. Studies show that a significant percentage of people remember seeing airplane banner ads. 
 1
 Targeted Reach: Advertisers can strategically select flight paths and timing to ensure their message reaches specific audiences, such as at events or busy locations.
+
+## ✈️ GeoFS Ad Banner Changer
+
+A lightweight script that replaces GeoFS ads with
+custom airline routes, announcements, or messages.
+
+### Works on:
+✔️ PC  
+✔️ iPad  
+✔️ Mobile browsers
