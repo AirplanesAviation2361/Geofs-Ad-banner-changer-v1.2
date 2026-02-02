@@ -95,3 +95,24 @@ function changeBanner() {
 
 // wait for GeoFS to load the banner first
 setInterval(changeBanner, 5000);
+
+// ===============================
+// GeoFS Ad Banner Changer v1.0
+// ===============================
+
+// --- YOUR ROTATING BANNERS ---
+const banners = [
+  "✈️ Fly Hong Kong — HKG → LHR",
+  "🛫 Fly Pakistan — ISB → DXB",
+  "🛬 Air odysha - LHR → IGI"
+];
+
+let index = 0;
+
+setInterval(() => {
+  const banner = document.querySelector(".ad-banner");
+  if (!banner) return;
+
+  banner.innerText = banners[index];
+  index = (index + 1) % banners.length;
+}, 5000);
