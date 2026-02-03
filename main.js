@@ -118,20 +118,22 @@ const banners = [
 ];
 
 let index = 0
-
-setInterval(() => {
+const wait = setInterval(() => {
   const banner = document.querySelector(".ad-banner");
   if (!banner) return;
 
+  clearInterval(wait);
+
+  // Apply style once
   banner.classList.add("geofs-custom-banner");
-  banner.innerText = banners[index];
-  index = (index
-        + 1) % banners.length;}, 5000);
-banner.style.opacity = 0;
-setTimeout(() => {
-  banner.innerText = banners[index];
-  banner.style.opacity = 1;
-}, 250);
+
+  // Start rotating messages
+  setInterval(() => {
+    banner.innerText = banners[index];
+    index = (index + 1) % banners.length;
+  }, ROTATION_TIME);
+
+}, 500);
 
 const ROTATION_TIME = 5000;
 
