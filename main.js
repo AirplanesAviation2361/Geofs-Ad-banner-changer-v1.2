@@ -125,5 +125,10 @@ setInterval(() => {
 
   banner.classList.add("geofs-custom-banner");
   banner.innerText = banners[index];
-  index = (index + 1) % banners.length;
-}, 5000);
+  index = (index
+        + 1) % banners.length;}, 5000);
+banner.style.opacity = 0;
+setTimeout(() => {
+  banner.innerText = banners[index];
+  banner.style.opacity = 1;
+}, 250);
