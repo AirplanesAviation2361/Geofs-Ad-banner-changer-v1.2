@@ -115,12 +115,13 @@ const banners = [
   "🛬 Air odysha - LHR → IGI"
 ];
 
-let index = 0;
+let index = 0
 
 setInterval(() => {
   const banner = document.querySelector(".ad-banner");
   if (!banner) return;
 
+  banner.classList.add("geofs-custom-banner");
   banner.innerText = banners[index];
   index = (index + 1) % banners.length;
 }, 5000);
