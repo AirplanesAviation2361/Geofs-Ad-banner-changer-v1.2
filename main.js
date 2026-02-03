@@ -1,3 +1,11 @@
+// Inject styles.css into GeoFS
+(function injectCSS() {
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  link.href = "https://raw.githubusercontent.com/AirplanesAviation2361/Geofs-Ad-banner-changer/main/styles.css";
+  document.head.appendChild(link);
+})();
 // ==UserScript==
 // @name         GeoFs-Ad-banner-changer
 // @namespace    https://github.com/bismarck017
