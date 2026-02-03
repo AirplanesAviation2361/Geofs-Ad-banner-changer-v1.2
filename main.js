@@ -132,3 +132,13 @@ setTimeout(() => {
   banner.innerText = banners[index];
   banner.style.opacity = 1;
 }, 250);
+
+const ROTATION_TIME = 5000;
+
+const banners = [
+  "✈️ Fly Hong Kong — HKG → LHR",
+  "🛫 Fly Pakistan — ISB → DXB",
+  "🛬 More routes coming soon…"
+];
+
+let index = 0;
