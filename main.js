@@ -5,6 +5,8 @@
   link.type = "text/css";
   link.href = "https://raw.githubusercontent.com/AirplanesAviation2361/Geofs-Ad-banner-changer/main/styles.css";
   document.head.appendChild(link);
+  if (window.__geofsBannerRunning) return;
+window.__geofsBannerRunning = true;
 })();
 // ==UserScript==
 // @name         GeoFs-Ad-banner-changer
