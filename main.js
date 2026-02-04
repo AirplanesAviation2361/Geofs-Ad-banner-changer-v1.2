@@ -1,3 +1,5 @@
+if (window.__geofsBannerRunning) return;
+window.__geofsBannerRunning = true;
 // ===============================
 // GeoFS Ad Banner Changer v1.0
 // ===============================
