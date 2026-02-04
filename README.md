@@ -31,3 +31,27 @@ custom airline routes, announcements, or messages.
 ✔️ PC  
 ✔️ iPad  
 ✔️ Mobile browsers
+# ✈️ GeoFS Ad Banner Changer
+
+Replace the default GeoFS ad banner with custom rotating airline messages.
+
+## 🔖 Bookmarklet Usage
+1. Copy the bookmarklet code
+2. Add it as a browser bookmark
+3. Open GeoFS
+4. Start a flight
+5. Click the bookmark
+
+✔ No installs  
+✔ No extensions  
+✔ Works on iPad & desktop  
+
+## ✨ Features
+- Rotating airline banners
+- Fade animation
+- Safe reload protection
+- Mobile compatible
+- Custom CSS styling
+
+## 📄 License
+MIT
