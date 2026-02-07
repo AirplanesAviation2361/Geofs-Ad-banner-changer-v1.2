@@ -25,7 +25,8 @@ let index = 0;
   document.head.appendChild(link);
 })();
 
-// Wait for GeoFS banner, then start rotation
+const bannerClasses = ["fly-hk", "fly-pk", "air-odisha"];
+
 const wait = setInterval(() => {
   const banner = document.querySelector(".ad-banner");
   if (!banner) return;
@@ -35,8 +36,14 @@ const wait = setInterval(() => {
   banner.classList.add("geofs-custom-banner");
 
   setInterval(() => {
-    banner.style.opacity = 0;
+    // Remove previous airline classes
+    banner.classList.remove(...bannerClasses);
 
+    // Add the current airline class
+    banner.classList.add(bannerClasses[index]);
+
+    // Fade animation
+    banner.style.opacity = 0;
     setTimeout(() => {
       banner.innerText = banners[index];
       banner.style.opacity = 1;
@@ -45,6 +52,6 @@ const wait = setInterval(() => {
 
   }, ROTATION_TIME);
 
-}, 500);;
+}, 500);
   
   
