@@ -1,7 +1,12 @@
+// Inject styles.css into GeoFS
 (function injectCSS() {
+  // Check if it’s already injected
+  if (document.getElementById("geofs-banner-css")) return;
+
   const link = document.createElement("link");
+  link.id = "geofs-banner-css"; // unique ID to prevent duplicate injections
   link.rel = "stylesheet";
-  link.href =
-    "https://raw.githubusercontent.com/AirplanesAviation2361/Geofs-Ad-banner-changer/main/styles.css";
+  link.type = "text/css";
+  link.href = "https://raw.githubusercontent.com/AirplanesAviation2361/Geofs-Ad-banner-changer/main/styles.css";
   document.head.appendChild(link);
 })();
