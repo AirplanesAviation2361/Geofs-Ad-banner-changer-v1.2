@@ -1,7 +1,5 @@
-
-}
 /* ===============================
-   GeoFS Ad Banner Changer Styles
+   GeoFS Ad Banner Changer Styles v1.2
    =============================== */
 
 /* Base banner style */
@@ -9,9 +7,7 @@
   font-weight: bold;
   font-size: 15px;
   text-align: center;
-  color: #ffffff;
-  background: linear-gradient(90deg, #0b1a2a, #102c44);
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   padding: 6px 10px;
   border-radius: 4px;
   transition: opacity 0.5s ease, background 0.4s ease;
@@ -19,27 +15,28 @@
   overflow: hidden;
 }
 
-/* ✨ Soft glow (aviation HUD style) */
-.geofs-custom-banner.glow {
-  box-shadow: 0 0 8px rgba(0, 180, 255, 0.6);
-}
-
-/* 🎯 Airline themes (optional) */
-/* Airline-specific themes */
+/* Airline themes */
 .geofs-custom-banner.fly-hk {
   background: linear-gradient(90deg, #FFD700, #000000); /* yellow → black */
+  color: #000000;
 }
 
 .geofs-custom-banner.fly-pk {
   background: linear-gradient(90deg, #008000, #FFFF00, #FF0000); /* green → yellow → red */
+  color: #000000;
 }
 
 .geofs-custom-banner.air-odisha {
-  background: linear-gradient(90deg, #0000FF, #0055FF); /* blue shades */
-}
+  background: linear-gradient(90deg, #0000FF, #00BFFF); /* blue shades */
+  color: #FFFFFF;
 }
 
-/* 📜 Scrolling ticker (airport board style) */
+/* Optional glow effect */
+.geofs-custom-banner.glow {
+  box-shadow: 0 0 8px rgba(0, 180, 255, 0.6);
+}
+
+/* Optional scrolling ticker */
 .geofs-custom-banner.ticker span {
   display: inline-block;
   padding-left: 100%;
@@ -47,10 +44,6 @@
 }
 
 @keyframes geofs-scroll {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-100%); }
 }
