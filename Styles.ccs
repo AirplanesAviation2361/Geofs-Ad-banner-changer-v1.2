@@ -25,16 +25,18 @@
 }
 
 /* 🎯 Airline themes (optional) */
+/* Airline-specific themes */
 .geofs-custom-banner.fly-hk {
-  background: linear-gradient(90deg, #b80000, #5a0000);
+  background: linear-gradient(90deg, #FFD700, #000000); /* yellow → black */
 }
 
 .geofs-custom-banner.fly-pk {
-  background: linear-gradient(90deg, #005f2f, #003d1e);
+  background: linear-gradient(90deg, #008000, #FFFF00, #FF0000); /* green → yellow → red */
 }
 
 .geofs-custom-banner.air-odisha {
-  background: linear-gradient(90deg, #ff7a00, #c85000);
+  background: linear-gradient(90deg, #0000FF, #0055FF); /* blue shades */
+}
 }
 
 /* 📜 Scrolling ticker (airport board style) */
