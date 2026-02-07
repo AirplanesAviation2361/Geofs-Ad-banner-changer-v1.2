@@ -53,5 +53,5 @@ const wait = setInterval(() => {
   }, ROTATION_TIME);
 
 }, 500);
-  
+banner.classList.add("glow");
   
