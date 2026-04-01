@@ -26,7 +26,7 @@ let index = 0;
   const link = document.createElement("link");
   link.rel = "stylesheet";
   link.href =
-    "https://raw.githubusercontent.com/AirplanesAviation2361/Geofs-Ad-banner-changer/main/styles.css";
+    "https://raw.githubusercontent.com/AirplanesAviation2361/Geofs-Ad-banner-changer/main/main.js";
   document.head.appendChild(link);
 })();
 
