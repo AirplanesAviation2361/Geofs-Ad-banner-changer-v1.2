@@ -60,3 +60,25 @@ const wait = setInterval(() => {
   }, ROTATION_TIME);
 
 }, 500);
+
+
+(function () {
+    'use strict';
+    console.log("Ad Banner Changer script running...");
+
+    // reload from error
+    const savedState = localStorage.getItem("geofs_Ad_Banner_Changer_last_state");
+    const url = window.location.href;
+    const jsonUrl = localStorage.getItem("json_url");
+
+    if ((!url.startsWith("https://www.geo-fs.com/fly?a=") && !url.startsWith("https://www.geo-fs.com/geofs.php?a=")) && savedState) {
+
+        const data = JSON.parse(savedState);
+        if(data.AdbannerUrl == jsonUrl){
+            setTimeout(() => {
+                loadAdBannerFromUrl(data.BannerUrl, data.BannerName);
+                setTimeout(() => {
+                    geofs.flyTo([data.lat, data.lon, data.alt, data.heading, true]);
+                }, 250);
+            }, 500);
+        }
